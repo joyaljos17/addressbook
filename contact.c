@@ -247,12 +247,25 @@ void editContact(AddressBook *addressBook)
 void deleteContact(AddressBook *addressBook)
 {
 	/* Define the logic for deletecontact */
+    char choice;
      int res=searchContact(addressBook);
+     printf("Do you want to delete(y/n)\n");
+     getchar();
+     scanf("%c",&choice);
+     if(choice=='y')
+     {
      for(int i=res;i<addressBook->contactCount;i++)
      {
         addressBook->contacts[i]=addressBook->contacts[i+1];
      }
-   addressBook->contactCount--;
+        addressBook->contactCount--;
+        printf("Succesfully Deleted\n");
+    }
+    else
+    {
+        printf("Not deleted!");
+        return;
+    }
 }
 int validate_name(char *str)
 {
