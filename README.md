@@ -1,11 +1,11 @@
 Address Book Application in C 
 
 This project is a console-based Address Book application written in C, designed using modular programming.
-It allows users to store, manage, and retrieve contact details using file handling.
-Features
+It allows users to store, manage, and retrieve contact details using file handling.  
+
+Features  
 
 Add new contacts     
-
 Display all saved contacts  
 Search contacts  
 Store contacts permanently using a file  
